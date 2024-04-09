@@ -58,6 +58,7 @@ class Calculator {
                 break
             case "=":
                 this.processEqualOperator()
+                this.currentOperationText.innerText = this.previousOperationText.innerText.slice(0, -1)
                 break
             default:
                 return
